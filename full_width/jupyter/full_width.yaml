@@ -1,0 +1,7 @@
+Type: IPython Notebook Extension
+Name: FullWidth
+Description: This extension adds a button to expand the notebook width
+Link: readme.md
+Icon: icon.png
+Main: full_width.js
+Compatibility: 4.x, 5.x
