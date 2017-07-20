@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="jupyter_full_width",
-    version="1.1.0",
+    version="1.2.0",
     description="Add a button to allow jupyter to use the full browser width",
     url="https://github.com/JoaoFelipe/JupyterFullWidth",
     author="Joao Felipe Pimentel",

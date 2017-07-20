@@ -17,7 +17,7 @@ define([
         var name = name + "=";
         var decodedCookie = decodeURIComponent(document.cookie);
         var ca = decodedCookie.split(';');
-        for(var i = 0; i <ca.length; i++) {
+        for(var i = 0; i < ca.length; i++) {
             var c = ca[i];
             while (c.charAt(0) == ' ') {
                 c = c.substring(1);
@@ -31,8 +31,8 @@ define([
 
     function setCookie(name, value) {
         var d = new Date();
-        d.setTime(d.getTime() + (365*24*60*60*1000));
-        var expires = "expires="+ d.toUTCString();
+        d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
         document.cookie = name + "=" + value + ";" + expires + ";path=" + document.location.pathname;
     }
 
@@ -40,7 +40,7 @@ define([
         createClass('.full_width', 'width: 100% !important;');
         var full = getCookie('full_width_enabled') === 'true';
         if (full) {
-                $(".container").addClass("full_width");
+            $(".container").addClass("full_width");
         }
         var handler = function () {
             if (!full) {
